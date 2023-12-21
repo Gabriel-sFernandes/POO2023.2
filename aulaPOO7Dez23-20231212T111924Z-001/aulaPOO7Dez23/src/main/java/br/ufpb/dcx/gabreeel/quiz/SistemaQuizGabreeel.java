@@ -1,4 +1,4 @@
-package br.ufpb.dcx.ayla.quiz;
+package br.ufpb.dcx.gabreeel.quiz;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -20,9 +20,9 @@ public class SistemaQuizGabreeel implements SistemaQuiz{
     }
 
     @Override
-    public Pergunta sorteiaPergunta() {
+    public Pergunta sorteiaPergunta() throws  PerguntaNaoExisteException {
         if (this.perguntas.isEmpty()) {
-            return null;
+            throw new PerguntaNaoExisteException("Não existe pergunta cadastrada");
         } else {
             //TODO: Depois melhorar usado random
             return this.perguntas.get(0);

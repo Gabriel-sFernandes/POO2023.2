@@ -1,4 +1,4 @@
-package br.ufpb.dcx.ayla.quiz;
+package br.ufpb.dcx.gabreeel.quiz;
 
 public abstract class Pergunta {
 

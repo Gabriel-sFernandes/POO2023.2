@@ -1,4 +1,4 @@
-package br.ufpb.dcx.ayla.quiz;
+package br.ufpb.dcx.gabreeel.quiz;
 
 import java.util.Arrays;
 import java.util.Objects;
@@ -43,7 +43,7 @@ public class PerguntaME {
     }
 
     public String toString(){
-        String tmp = enunciado+"\n";
+        String tmp = this.enunciado+"\n";
         for (String s: this.alternativas){
             tmp+= s+"\n";
         }

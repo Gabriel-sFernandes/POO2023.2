@@ -1,4 +1,4 @@
-package br.ufpb.dcx.ayla.quiz;
+package br.ufpb.dcx.gabreeel.quiz;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -31,10 +31,11 @@ public class ProgramaQuiz {
                 perguntas.add(pergunta);
                 System.out.println("Pergunta cadastrada com sucesso");
             } else if (opcao.equals("2")){
-                if (perguntas.size()==0){
+                if (perguntas.isEmpty()){
                     System.out.println("Nenhuma pergunta foi cadastrada");
                     //TODO: FAZER
                 }
+
             } else if (opcao.equals("3")){
                 continuar = false;
             }
